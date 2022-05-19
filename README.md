@@ -1,6 +1,7 @@
-# SEIR-Project2
+# SEIR-Project2 - Ryan Portorreal
 
 ## Full-stack Web Application
+
 
 https://calm-ocean-70886.herokuapp.com/
 
