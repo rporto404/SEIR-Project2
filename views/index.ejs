@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="nav" href="/home">Home</a>
+      <a class="nav" href="/">Products</a>
+      <a class="nav" href="/about">About Us</a>
+    </div>
+    <h1>Take A Look at Our Products!</h1>
+    <div class="createButton">
+      <a href="/new"><button>Add New Product</button></a>
+    </div>
+    <div class="productCard">
+      <% for (let i = 0; i < data.length; i++) { %>
+        <div class="product">
+            <br>
+            <a href="/<%=data[i]._id%>"> <img src="<%=data[i].image%>"> </a>
+            <br>
+            <%=data[i].name%>
+        </div>
+      <% } %>
+    </div>
+    <div class="footer">
+      <a class="nav" href="/contact">Contact Us</a>
+    </div>
+  </body>
+</html>

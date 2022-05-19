@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="nav" href="/home">Home</a>
+      <a class="nav" href="/">Products</a>
+      <a class="nav" href="/about">About Us</a>
+    </div>
+    <h1>Edit Product</h1>
+    <div class="center">
+      <div class="createProduct">
+        <form action="/<%=data._id%>?_method=PUT" method="POST">
+          Name: <input type="text" name="name" value="<%=data.name%>" />
+          <br>
+          Image Link: <input type="text" name="image" value="<%=data.image%>" />
+          <br>
+          Description: <input type="text" name="description" value="<%=data.description%>" />
+          <br>
+          <input type="submit" value="Confirm Edits">
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <a class="nav" href="/contact">Contact Us</a>
+    </div>
+  </body>
+</html>
